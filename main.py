@@ -11,3 +11,7 @@ while second > 0:
     sec = second % 60
     timer = f"{mins:02d}:{sec:02d}"
     print(timer, end="\r")
+    time.sleep(1)
+    seconds -= 1
+    
+print("⏰ Time's up!")
