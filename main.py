@@ -17,7 +17,7 @@ while seconds > 0:
 # Time's up message
 print("⏰ Time's up!")
 
-# Time's up sound / beep macOS/Linux terminal
+# Time's up sound  macOS/Linux terminal
 os.system('say "time is up"')  # makes the Mac speak!
 # OR simpler beep (might work depending on your terminal)
 print("\a")
