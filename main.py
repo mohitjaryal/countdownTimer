@@ -1,17 +1,23 @@
 # Countdown Timer using python
 
 import time
+import os  # for terminal beep on mac/linux
 
-# User input
-seconds = int(input('Enter seconds :'))
+# Ask user for countdown time in seconds
+seconds = int(input("Enter time in seconds: "))
 
-# Main logic
 while seconds > 0:
-    mins = seconds / 60
-    sec = seconds % 60
-    timer = f"{mins:02d}:{sec:02d}"
-    print(timer, end="\r")
+    mins = seconds // 60
+    secs = seconds % 60
+    timer = f"{mins:02d}:{secs:02d}"
+    print(timer, end="\r")  # overwrite the same line
     time.sleep(1)
     seconds -= 1
-    
+
+# Time's up message
 print("⏰ Time's up!")
+
+# Play a beep sound on macOS/Linux terminal
+os.system('say "time is up"')  # makes the Mac speak!
+# OR simpler beep (might work depending on your terminal)
+print("\a")
