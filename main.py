@@ -3,4 +3,4 @@
 import time
 
 # User input
-second = int(input())
+second = int(input('Enter seconds :'))
