@@ -3,7 +3,7 @@
 import time
 import os  # for terminal beep on mac/linux
 
-# Ask user for countdown time in seconds
+# User input
 seconds = int(input("Enter time in seconds: "))
 
 while seconds > 0:
