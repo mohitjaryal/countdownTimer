@@ -6,3 +6,6 @@ import time
 second = int(input('Enter seconds :'))
 
 # Main logic
+while second > 0:
+    mins = second / 60
+    sec = second % 60
