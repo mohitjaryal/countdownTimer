@@ -18,5 +18,5 @@ while seconds > 0:
 print("⏰ Time's up!")
 
 # Time's up sound - macOS/Linux terminal
-os.system('say "time is up"')  # makes the Mac speak!
+os.system('say "Hello sir, Time is up"')  # makes the Mac speak!
 print("\a")
